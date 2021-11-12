@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>514</width>
+    <height>375</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>12</pointsize>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>130</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>hello world</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>514</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menumyapp">
+    <property name="title">
+     <string>myapp</string>
+    </property>
+    <addaction name="actionop1"/>
+    <addaction name="actionop2"/>
+    <addaction name="actionop3"/>
+    <addaction name="actionop4"/>
+   </widget>
+   <addaction name="menumyapp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionop1">
+   <property name="text">
+    <string>op1</string>
+   </property>
+  </action>
+  <action name="actionop2">
+   <property name="text">
+    <string>op2</string>
+   </property>
+  </action>
+  <action name="actionop3">
+   <property name="text">
+    <string>op3</string>
+   </property>
+  </action>
+  <action name="actionop4">
+   <property name="text">
+    <string>op4</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

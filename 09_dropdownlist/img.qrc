@@ -1,0 +1,38 @@
+<RCC>
+    <qresource prefix="/">
+        <file>summer/retina/summer.png</file>
+        <file>summer/retina/summer@2x.png</file>
+        <file>summer/retina/summer-01@2x.png</file>
+        <file>summer/retina/summer-02@2x.png</file>
+        <file>summer/retina/summer-03@2x.png</file>
+        <file>summer/retina/summer-04@2x.png</file>
+        <file>summer/retina/summer-05@2x.png</file>
+        <file>summer/retina/summer-06@2x.png</file>
+        <file>summer/retina/summer-07@2x.png</file>
+        <file>summer/retina/summer-08@2x.png</file>
+        <file>summer/retina/summer-09@2x.png</file>
+        <file>summer/retina/summer-10@2x.png</file>
+        <file>summer/retina/summer-11@2x.png</file>
+        <file>summer/retina/summer-12@2x.png</file>
+        <file>summer/retina/summer-13@2x.png</file>
+        <file>summer/retina/summer-14@2x.png</file>
+        <file>summer/retina/summer-15@2x.png</file>
+        <file>summer/retina/summer-16@2x.png</file>
+        <file>summer/retina/summer-17@2x.png</file>
+        <file>summer/retina/summer-18@2x.png</file>
+        <file>summer/retina/summer-19@2x.png</file>
+        <file>summer/retina/summer-20@2x.png</file>
+        <file>summer/retina/summer-21@2x.png</file>
+        <file>summer/retina/summer-22@2x.png</file>
+        <file>summer/retina/summer-23@2x.png</file>
+        <file>summer/retina/summer-24@2x.png</file>
+        <file>summer/retina/summer-25@2x.png</file>
+        <file>gif/1.gif</file>
+        <file>gif/2.gif</file>
+        <file>gif/3.gif</file>
+        <file>gif/4.gif</file>
+        <file>gif/5.gif</file>
+        <file>gif/6.gif</file>
+        <file>gif/7.gif</file>
+    </qresource>
+</RCC>

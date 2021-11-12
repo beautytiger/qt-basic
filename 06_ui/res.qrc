@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/2021-07-1.png</file>
+        <file>image/2021-07-2.png</file>
+        <file>image/myicon.jpg</file>
+        <file>image/Snipaste_2021-09-15_09-22-48.png</file>
+        <file>image/Snipaste_2021-09-15_09-23-16.png</file>
+        <file>image/snow_leopard.jpg</file>
+    </qresource>
+</RCC>
