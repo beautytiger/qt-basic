@@ -8,14 +8,23 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
 
     QGraphicsScene * scene = new QGraphicsScene();
-    MyRect * rect = new MyRect();
-    rect->setRect(0,0,100,100);
-    scene->addItem(rect);
+    MyRect * player = new MyRect();
+    player->setRect(0,0,100,100);
+    scene->addItem(player);
 
-    rect->setFlag(QGraphicsItem::ItemIsFocusable);
-    rect->setFocus();
+    player->setFlag(QGraphicsItem::ItemIsFocusable);
+    player->setFocus();
 
     QGraphicsView * view = new QGraphicsView(scene);
+
+    view->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+    view->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+
     view->show();
+    view->setFixedSize(1920,1080);
+    scene->setSceneRect(0, 0, 1920,1080);
+
+    player->setPos((view->width()-player->rect().width())/2, view->height()-player->rect().height());
+
     return a.exec();
 }
