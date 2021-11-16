@@ -5,10 +5,15 @@
 #include "Bullet.h"
 #include "Enemy.h"
 
-Player::Player(QGraphicsItem *parent)
+Player::Player(QGraphicsItem *parent): QObject(), QGraphicsPixmapItem(parent)
 {
     bulletsound = new QMediaPlayer();
     bulletsound->setMedia(QUrl("qrc:/sounds/resource/qiang sheng.wav"));
+
+    setPixmap(QPixmap(":/images/player.png"));
+//    setRotation(-90);
+    setScale(0.3);
+
 }
 
 void Player::keyPressEvent(QKeyEvent *event)

@@ -3,4 +3,11 @@
         <file>resource/lu guo ren jian.mp3</file>
         <file>resource/qiang sheng.wav</file>
     </qresource>
+    <qresource prefix="/">
+        <file>images/bg.jpg</file>
+        <file>images/bg1.jpg</file>
+        <file>images/bullet.png</file>
+        <file>images/enemy.png</file>
+        <file>images/player.png</file>
+    </qresource>
 </RCC>

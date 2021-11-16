@@ -8,10 +8,14 @@
 
 extern Game * game; // there is an external global object called game
 
-Bullet::Bullet()
+Bullet::Bullet(QGraphicsItem * parent): QObject(), QGraphicsPixmapItem(parent)
 {
     //draw the rect
-    setRect(0, 0, 10, 50);
+//    setRect(0, 0, 10, 50);
+    setPixmap(QPixmap(":/images/bullet.png"));
+//    setTransformOriginPoint(0,0);
+    setRotation(-90);
+    setScale(0.15);
 
     QTimer * timer = new QTimer();
     connect(timer, &QTimer::timeout, this, &Bullet::move);
@@ -37,7 +41,7 @@ void Bullet::move()
         }
     }
     setPos(x(), y()-10);
-    if (pos().y()+rect().height()<0) {
+    if (pos().y()<0) {
         scene()->removeItem(this);
         delete this;
 //        qDebug() << "bullet deleted";

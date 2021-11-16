@@ -1,19 +1,23 @@
 #include "Game.h"
 #include <QTimer>
 #include <QMediaPlayer>
+#include <QBrush>
+#include <QImage>
 
 Game::Game(QWidget *parent)
 {
     scene = new QGraphicsScene();
     scene->setSceneRect(0, 0, 1920,1080);
+    setBackgroundBrush(QBrush(QImage(":/images/bg.jpg")));
+
     setScene(scene);
     setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     setFixedSize(1920,1080);
 
     player = new Player();
-    player->setRect(0,0,100,100);
-    player->setPos((scene->width()-player->rect().width())/2, scene->height()-player->rect().height());
+//    player->setRect(0,0,100,100);
+    player->setPos((scene->width())/2, scene->height()-100);
     player->setFlag(QGraphicsItem::ItemIsFocusable);
     player->setFocus();
     scene->addItem(player);
