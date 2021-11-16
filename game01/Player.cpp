@@ -5,6 +5,12 @@
 #include "Bullet.h"
 #include "Enemy.h"
 
+Player::Player(QGraphicsItem *parent)
+{
+    bulletsound = new QMediaPlayer();
+    bulletsound->setMedia(QUrl("qrc:/sounds/resource/qiang sheng.wav"));
+}
+
 void Player::keyPressEvent(QKeyEvent *event)
 {
 //    qDebug() << "key pressed";
@@ -28,6 +34,14 @@ void Player::keyPressEvent(QKeyEvent *event)
 //        qDebug() << "bullet created";
         bullet->setPos(x(), y());
         scene()->addItem(bullet);
+
+        if(bulletsound->state()==QMediaPlayer::PlayingState) {
+            bulletsound->setPosition(0);
+        }
+//        else if (bulletsound->state()==QMediaPlayer::StoppedState) {
+//            bulletsound->play();
+//        }
+        bulletsound->play();
     }
 }
 

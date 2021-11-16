@@ -10,7 +10,7 @@ extern Game * game;
 Enemy::Enemy()
 {
     //set random position
-    int random_number = rand() % 700;
+    int random_number = rand() % 1920;
     setPos(random_number, 0);
     //draw the rect
     setRect(0, 0, 100, 100);

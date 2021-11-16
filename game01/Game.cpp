@@ -1,5 +1,6 @@
 #include "Game.h"
 #include <QTimer>
+#include <QMediaPlayer>
 
 Game::Game(QWidget *parent)
 {
@@ -28,4 +29,10 @@ Game::Game(QWidget *parent)
     QTimer * timer = new QTimer();
     QObject::connect(timer, &QTimer::timeout, player, &Player::spawn);
     timer->start(2000);
+
+    QMediaPlayer * media = new QMediaPlayer();
+    media->setMedia(QUrl("qrc:/sounds/resource/lu guo ren jian.mp3"));
+    media->play();
+
+    show();
 }

@@ -1,3 +1,6 @@
 <RCC>
-    <qresource prefix="/sounds"/>
+    <qresource prefix="/sounds">
+        <file>resource/lu guo ren jian.mp3</file>
+        <file>resource/qiang sheng.wav</file>
+    </qresource>
 </RCC>
