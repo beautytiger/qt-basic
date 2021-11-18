@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>pics/axe.png</file>
+        <file>pics/egg.png</file>
+        <file>pics/axe_red.png</file>
+        <file>pics/axe-bule.png</file>
+        <file>pics/black.png</file>
+        <file>pics/tower-green.png</file>
+        <file>pics/tower-red.png</file>
+        <file>pics/tower-yellow.png</file>
+    </qresource>
+</RCC>
