@@ -22,11 +22,15 @@ void GreenTower::fire()
     bullet2->setPixmap(QPixmap(":/pics/axe-bule.png"));
     bullet3->setPixmap(QPixmap(":/pics/axe-bule.png"));
 
-    bullet1->setPos(x()+this->pixmap().width()/2, y()+this->pixmap().height()/2);
-    bullet2->setPos(x()+this->pixmap().width()/2, y()+this->pixmap().height()/2);
-    bullet3->setPos(x()+this->pixmap().width()/2, y()+this->pixmap().height()/2);
+//    bullet1->setPos(x()+this->pixmap().width()/2, y()+this->pixmap().height()/2);
+//    bullet2->setPos(x()+this->pixmap().width()/2, y()+this->pixmap().height()/2);
+//    bullet3->setPos(x()+this->pixmap().width()/2, y()+this->pixmap().height()/2);
+    bullet1->setPos(x()+40, y()+40);
+    bullet2->setPos(x()+40, y()+40);
+    bullet3->setPos(x()+40, y()+40);
 
-    QLineF ln(QPointF(x()+this->pixmap().width()/2, y()+this->pixmap().height()/2), attack_dest);
+//    QLineF ln(QPointF(x()+this->pixmap().width()/2, y()+this->pixmap().height()/2), attack_dest);
+    QLineF ln(QPointF(x()+40, y()+40), attack_dest);
     int angle = -1 * ln.angle();
 
     bullet1->setRotation(angle);

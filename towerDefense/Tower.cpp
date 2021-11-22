@@ -20,7 +20,7 @@ Tower::Tower(QGraphicsItem *parent): QObject(), QGraphicsPixmapItem(parent)
            << QPoint(3,1) << QPoint(3,2)
            << QPoint(2,3) << QPoint(1,3)
            << QPoint(0,2) << QPoint(0,1);
-    int SCALE_FACTOR = 65;
+    int SCALE_FACTOR = 75;
     for (size_t i=0, n=points.size(); i<n; i++) {
         points[i] *= SCALE_FACTOR;
     }
@@ -31,7 +31,8 @@ Tower::Tower(QGraphicsItem *parent): QObject(), QGraphicsPixmapItem(parent)
     QPointF ploy_center(1.5,1.5);
     ploy_center *= SCALE_FACTOR;
     ploy_center = mapToScene(ploy_center);
-    QPointF tower_center(x()+this->pixmap().width()/2, y()+this->pixmap().height()/2);
+//    QPointF tower_center(x()+this->pixmap().width()/2, y()+this->pixmap().height()/2);
+    QPointF tower_center(x()+40, y()+40);
     QLineF ln(ploy_center, tower_center);
     attack_area->setPos(x()+ln.dx(), y()+ln.dy());
 
@@ -39,7 +40,8 @@ Tower::Tower(QGraphicsItem *parent): QObject(), QGraphicsPixmapItem(parent)
 //    connect(timer, &QTimer::timeout, this, &Tower::aquire_target);
 //    timer->start(1000);
 
-    attack_dest = QPointF(800, 0);
+    attack_dest = QPointF(0, 0);
+    has_target = false;
 }
 
 double Tower::distanceTo(QGraphicsItem *item)
