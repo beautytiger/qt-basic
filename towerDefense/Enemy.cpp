@@ -3,11 +3,11 @@
 #include <QTimer>
 #include <qmath.h>
 
-Enemy::Enemy(QGraphicsItem *parent)
+Enemy::Enemy(QList<QPointF> pointsToFollow, QGraphicsItem *parent)
 {
     setPixmap(QPixmap(":/pics/egg.png"));
 
-    points << QPointF(200, 200) << QPointF(400, 200);
+    points = pointsToFollow;
 
     point_index = 0;
     dest = points[0];
